@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Image Slider</title>
+        <style>
+            body {
+                margin: 0;
+                box-sizing: border-box;
+                display: grid;
+                place-items: center;
+                width: 100vw;
+                height: 100vh;
+                background-color: #ddd;
+            }
+            .container {
+                width: 40%;
+                height: 450px;
+                box-shadow: 0 0.5em 1.5em lightskyblue;
+                border-radius: 20px;
+                animation: slider 20s linear infinite;
+            }
+
+            @keyframes slider {
+                0%,
+                100% {
+                    background: url("https://images.hdqwalls.com/download/bokeh-violet-flowers-5k-ro-1920x1080.jpg");
+                    background-size: cover;
+                }
+                25% {
+                    background: url("https://images.hdqwalls.com/download/violet-flowers-5k-f3-1920x1080.jpg");
+                    background-size: cover;
+                }
+                50% {
+                    background: url("https://images.hdqwalls.com/download/flowers-closeup-4k-es-1920x1080.jpg");
+                    background-size: cover;
+                }
+                75% {
+                    background: url("https://images.hdqwalls.com/download/purdown-blossom-5k-00-1920x1080.jpg");
+                    background-size: cover;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"></div>
+    </body>
+</html>
